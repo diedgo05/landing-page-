@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Venta de Suscripciones</title>
+    <link rel="icon" href="icono.png" type="image/x-icon">
+</head>
+<body>
+   
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Pagina de suscripciones.html">Planes</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav>
+        <h1>Kinnoflix</h1>
+    </header>
+
+    <section id="pricing">
+        <h2>Selecciona tu plan de suscripción</h2>
+
+        <div class="subscription-plan" id="basic-plan">
+            <h3>Plan Básico</h3>
+            <p>Acceso a funciones básicas</p>
+            <p class="price">$9.99/mes</p>
+            <button onclick="purchaseSubscription('basic')">Comprar</button>
+            <button id="toggle-lista" onclick="toggleLista()">Especificaciones</button>
+            <div id="especificaciones" style="display: none;"></div>
+        </div>
+
+        <div class="subscription-plan" id="premium-plan">
+            <h3>Plan Premium</h3>
+            <p>Acceso a todas las funciones</p>
+            <p class="price">$19.99/mes</p>
+            <button onclick="purchaseSubscription('Premium')">Comprar</button>
+
+            <button id="toggle-lista2" onclick="toggleLista2()">Especificaciones</button>
+            <div id="especificaciones2" style="display: none;"></div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Plataforma Digital. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
